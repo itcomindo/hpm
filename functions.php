@@ -6,6 +6,9 @@
 
 defined('ABSPATH') or die('No script kiddies please!');
 
+//disable gutenberg
+add_filter('use_block_editor_for_post', '__return_false', 10);
+
 
 //add theme support
 add_theme_support('title-tag');

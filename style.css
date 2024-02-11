@@ -9,7 +9,7 @@
 * License URI: 	http://www.gnu.org/licenses/gpl-2.0.txt
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -17,13 +17,19 @@ html {
 
 :root {
   --font-primary: "Poppins", sans-serif;
-  --font-display: "Montserrat", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+  --font-display: "Rajdhani", sans-serif;
   --color-accent-1-light: #0d68a4;
   --color-accent-1: #0a4d7a;
   --color-accent-1-dark: #073656;
   --color-accent-2-light: #ff6329;
   --color-accent-2: #ff4500;
   --color-accent-2-dark: #b43100;
+  --color-light-1: #ffffff;
+  --color-light-2: #f4f4f4;
+  --color-dark-1: #333333;
+  --color-dark-2: #222222;
+  --color-dark-3: #111111;
   --transparent-light-1: rgba(255, 255, 255, 0.1);
   --transparent-light-2: rgba(255, 255, 255, 0.2);
   --transparent-light-3: rgba(255, 255, 255, 0.3);
@@ -297,6 +303,47 @@ ul.list-no-style.horizontal-list li {
 .hover-to-top {
   transition: 0.3s linear all;
 }
+.text-medium {
+  font-size: 1rem;
+}
+.with-square-box {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.with-square-box.color-accent-2:before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  background-color: var(--color-accent-2);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/**
+=========================
+* Footer Menu StyleCSS
+* @todo footer menu style
+*=========================
+*/
+
+ul.vertical-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+ul.vertical-menu li {
+  width: 100%;
+  border-bottom: 1px dashed var(--transparent-light-2);
+  margin-bottom: 8px;
+}
+ul.vertical-menu li a {
+  width: 100%;
+  display: block;
+}
 
 /**
 =========================
@@ -390,7 +437,55 @@ ul.list-no-style.horizontal-list li {
 
 /**
 =========================
-* Service Sectio StyleCSS
+* Hero Section StyleCSS
+* @todo hero section style
+*=========================
+*/
+
+#hero {
+  height: calc(75vh - 120px);
+  background-color: var(--color-dark-3);
+  color: var(--color-light-2);
+}
+
+#hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/wp-content/themes/hpm/assets/images/bg-1.webp"),
+    linear-gradient(
+      to right,
+      var(--color-accent-1-dark),
+      var(--color-accent-1),
+      var(--color-accent-1-dark)
+    );
+  background-repeat: no-repeat;
+}
+
+#hero-wr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+h1#hero-head {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  margin: 4px 0;
+  letter-spacing: 1px;
+}
+#hero-desc {
+  font-weight: 700;
+}
+
+/**
+=========================
+* Service Section StyleCSS
 * @todo service section style
 *=========================
 */
@@ -430,6 +525,51 @@ li.srv i {
   font-size: 2rem;
 }
 
+/**
+=========================
+* Footer StyleCSS
+* @todo footer styleCSS
+*=========================
+*/
+
+#foo {
+  background-color: var(--color-dark-3);
+  color: var(--color-light-1);
+}
+
+#foo-wr {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+#foo-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#foo-bot {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem 1rem;
+}
+
+.foo-col {
+  padding: 1rem;
+}
+
+h3.foo-head {
+  font-size: 1.2rem;
+  font-family: var(--font-secondary);
+}
+
+#cp {
+  height: 40px;
+  background-color: var(--color-dark-3);
+  color: var(--color-light-2);
+}
 /**
 =========================
 * Media Query Start
