@@ -570,6 +570,45 @@ h3.foo-head {
   background-color: var(--color-dark-3);
   color: var(--color-light-2);
 }
+.ttttt {
+  display: flex;
+  flex-direction: column;
+}
+/**
+=========================
+* Whatsapp box StyleCSS
+* @todo whatsapp box style
+*=========================
+*/
+
+#grt {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: darkred;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 777;
+  text-align: center;
+}
+
+#grt span {
+  color: var(--color-light-1);
+  font-size: 80%;
+  text-align: center;
+  line-height: 1.4;
+}
+
+#wa-pr {
+  display: none;
+}
+
 /**
 =========================
 * Media Query Start

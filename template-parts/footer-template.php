@@ -66,3 +66,9 @@ defined('ABSPATH') or die('No script kiddies please!');
         </div>
     </div>
 </div>
+
+
+
+<?php
+
+get_template_part('components/whatsapp-box-component');
