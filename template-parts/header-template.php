@@ -14,7 +14,9 @@ get_template_part('template-parts/topbar-template');
         <div id="header-wr" class="h100">
             <!-- header left -->
             <div id="header-left" class="h100">
-                <h2><a class="h100" href="/">PT. HPM Group</a></h2>
+                <a class="header-logo-wr" href="/">
+                    <img class="find-this" src="<?php echo mm_get_website_data()['logo-webp']; ?>" alt="<?php echo mm_get_website_data()['nama-perusahaan']; ?>" title="<?php echo mm_get_website_data()['nama-perusahaan']; ?>">
+                </a>
             </div>
 
             <!-- header right -->

@@ -6,6 +6,78 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+
+        //desktop whatsappBox start
+
+
+        function desktopWhatsappBox() {
+            function dwb() {
+                var $whatsappBox = jQuery('#wa-pr');
+                var $waOpen = jQuery('.wa-open');
+                var $greeting = jQuery('#grt');
+                var $sw = jQuery(window).width();
+
+
+                $whatsappBox.slideUp();
+
+
+
+                if ($sw > 541) {
+                    $greeting.show();
+
+                    //open
+                    jQuery($waOpen).on('click', function (e) {
+                        e.preventDefault();
+                        jQuery($greeting).slideUp();
+                        $whatsappBox.slideDown();
+                    });
+
+                    //close
+                    jQuery('.wa-close ').on('click', function () {
+                        $whatsappBox.slideUp();
+                        $greeting.slideDown();
+                        jQuery('#mobap').slideUp();
+                    });
+
+
+
+
+
+                } else {
+                    $greeting.hide();
+
+                    //open
+                    jQuery($waOpen).on('click', function (e) {
+                        e.preventDefault();
+                        jQuery($greeting).slideUp();
+                        $whatsappBox.slideDown();
+                        jQuery('#mobap').slideUp();
+                    });
+                    //close
+                    jQuery('.wa-close ').on('click', function () {
+                        jQuery('#mobap').slideDown();
+                        $whatsappBox.slideUp();
+                    });
+
+
+                }
+            }
+
+
+            dwb();
+            jQuery(window).resize(function () {
+                dwb();
+            });
+        }
+        desktopWhatsappBox();
+
+
+
+
+        //desktop whatsappBox end
+
+
+
         //mobile-menu start
 
         function headerMenu() {

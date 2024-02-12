@@ -1,7 +1,7 @@
 /*
 * Theme Name: 	HPM
 * Theme URI: 	https://pt-husnanputramandiri.com/
-* Description: 	HPM is a simple and clean theme with a great elegant design and it is easy to customize with Customizer. It is perfect for your blog, portfolio, photography, and business website.
+* Description: 	HPM is a simple and clean theme with
 * Author: 		Husnan Putra Mandiri
 * Author URI: 	https://budiharyono.id/
 * Version: 	Beta.1.0.0
@@ -22,9 +22,9 @@
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
   --font-display: "Rajdhani", sans-serif;
-  --color-accent-1-light: #0d68a4;
-  --color-accent-1: #0a4d7a;
-  --color-accent-1-dark: #073656;
+  --color-accent-1-light: #508dc6;
+  --color-accent-1: #306494;
+  --color-accent-1-dark: #224668;
   --color-accent-2-light: #ff6329;
   --color-accent-2: #ff4500;
   --color-accent-2-dark: #b43100;
@@ -595,9 +595,20 @@ a.the-btn.email-bg:before {
 }
 #header-left {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: flex-start;
 }
+
+a.header-logo-wr {
+  width: 80px;
+  aspect-ratio: 16/9;
+}
+a.header-logo-wr img.find-this {
+  width: 100%;
+  height: auto;
+}
+
 #header-right {
   display: flex;
   flex-direction: row;
@@ -818,6 +829,12 @@ a.ab-btn {
   text-align: center;
 }
 
+#foo-logo-wr {
+  width: 100px;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+}
+
 #foo-bot {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -835,8 +852,14 @@ h3.foo-head {
 
 #cp {
   height: 40px;
-  background-color: var(--color-dark-3);
+  background-color: var(--color-dark-1);
   color: var(--color-light-2);
+  font-size: 90%;
+}
+#cp-wr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /**
@@ -849,18 +872,61 @@ h3.foo-head {
 #grt {
   position: fixed;
   right: 1rem;
-  bottom: 1rem;
-  width: 100px;
-  height: 100px;
+  bottom: 3rem;
+  width: 75px;
+  height: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: darkred;
+  background-color: var(--color-dark-3);
+  color: var(--color-light-1);
   border-radius: 50%;
   cursor: pointer;
   z-index: 777;
   text-align: center;
+  font-size: 80%;
+  transform: translateY(0);
+  transition: 0.3s linear all;
+}
+#grt:hover {
+  transform: translateY(-3px);
+  transition: 0.3s linear all;
+}
+
+#grt:hover:before {
+  transform: rotate(-45deg);
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform;
+}
+#grt:after {
+  content: "";
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  background-color: var(--transparent-dark-2);
+  border-radius: 50%;
+  filter: blur(5px);
+}
+
+#grt:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    var(--color-accent-1-dark),
+    var(--color-accent-1),
+    var(--color-accent-1-dark)
+  );
+  z-index: -1;
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform;
+  transform: rotate(15deg);
 }
 
 #grt span {
@@ -871,7 +937,150 @@ h3.foo-head {
 }
 
 #wa-pr {
+  background-color: var(--color-dark-3);
+  color: var(--color-light-1);
+  position: fixed;
+  right: 1rem;
+  bottom: 2rem;
+  width: 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--transparent-dark-2) inset;
+  padding: 1rem 0;
+}
+#wa-pr:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--color-accent-1-dark),
+    var(--color-accent-1),
+    var(--color-accent-1-dark)
+  );
+  border-radius: 10px;
+}
+#wa-pr:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: var(--transparent-dark-7);
+  bottom: -15px;
+  border-radius: 50%;
+  filter: blur(5px);
+}
+#wa-wr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+ul.wa-list {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pad: 8px;
+  font-size: 80%;
+}
+ul.wa-list li {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ul.wa-list li a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  gap: 4px;
+}
+
+li.wa-close {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: var(--color-dark-3);
+  cursor: pointer;
+}
+
+/**
+=========================
+* Mobile App StyleCSS
+* @todo Mobile App StyleCSS
+*=========================
+*/
+
+#mobap {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 666;
+  background-color: var(--color-dark-3);
+  color: var(--color-light-1);
   display: none;
+}
+#mobap:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--color-dark-3),
+    var(--color-dark-1),
+    var(--color-dark-3)
+  );
+  z-index: -1;
+}
+#mobap-wr {
+  width: 100%;
+  height: 100%;
+}
+ul.mobap-list {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  font-size: 80%;
+  gap: 8px;
+}
+ul.mobap-list li {
+  width: 100%;
+  height: 100%;
+}
+ul.mobap-list li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ul.mobap-list li a i {
+  font-size: 1rem;
+}
+ul.mobap-list li a span {
+  font-size: 90%;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /**
@@ -1007,6 +1216,21 @@ h3.foo-head {
     width: 100%;
     display: block;
     box-sizing: border-box;
+  }
+}
+
+/**
+=========================
+* 540px
+* @todo 540px
+*=========================
+*/
+@media screen and (max-width: 540px) {
+  #grt {
+    display: none !important;
+  }
+  #mobap {
+    display: block;
   }
 }
 

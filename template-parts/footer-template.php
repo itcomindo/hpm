@@ -13,6 +13,9 @@ defined('ABSPATH') or die('No script kiddies please!');
         <div id="foo-wr">
             <!-- foo top -->
             <div id="foo-top">
+                <div id="foo-logo-wr">
+                    <img class="find-this" src="<?php echo mm_get_website_data()['logo-webp']; ?>" alt="<?php echo mm_get_website_data()['nama-perusahaan']; ?>" title="<?php echo mm_get_website_data()['nama-perusahaan']; ?>">
+                </div>
                 <h2 class="section-head section-head-small"><?php echo esc_html(mm_get_website_data()['nama-perusahaan']); ?></h2>
                 <span class="foo-alamat lw75-mw100"><?php echo esc_html(mm_get_website_data()['alamat']); ?></span>
                 <span class="foo-phone"><i class="fas fa-phone"></i> <i class="fab fa-whatsapp"></i> <?php echo esc_html(mm_get_website_data()['phone']); ?></span>
@@ -72,3 +75,4 @@ defined('ABSPATH') or die('No script kiddies please!');
 <?php
 
 get_template_part('components/whatsapp-box-component');
+get_template_part('components/mobile-app-component');
