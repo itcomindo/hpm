@@ -21,20 +21,26 @@ defined('ABSPATH') or die('No script kiddies please!');
             </div>
             <!-- service bottom -->
             <div id="service-bot">
-                <ul class="list-no-style srv-list">
-                    <?php
-                    for ($i = 0; $i < 6; $i++) {
-                    ?>
-                        <li class="srv hover-to-top">
-                            <i class="fab fa-whatsapp"></i>
-                            <h3 class="section-head section-head-smallest">Outsourcing Security</h3>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus.</span>
-                            <a href="#" class="the-btn big">Learn More</a>
-                        </li>
-                    <?php
-                    }
-                    ?>
-                </ul>
+
+                <?php
+                mm_get_service_page_query();
+                ?>
+
+
+
+                <div class="service-bot-inner">
+
+
+                    <span>Kami pastikan para staff: good attitude, jujur, terdidik, terlatih, berdedikasi, loyal dan dapat di andalkan.</span>
+
+                    <a href="//wa.me/<?php echo esc_html(mm_get_website_data()['phone-url']); ?>" class="service-btn the-btn bigger borad-7 shadow-m hover-to-top wa-bg"><i class="fab fa-whatsapp"></i> Chat Dengan Kami</a>
+
+
+                </div>
+
+
+
+
             </div>
         </div>
     </div>

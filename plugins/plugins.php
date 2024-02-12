@@ -7,3 +7,4 @@
 defined('ABSPATH') or die('No script kiddies please!');
 
 require_once get_template_directory() . '/plugins/local-business-plugin.php';
+require_once get_template_directory() . '/plugins/shortcode-plugin.php';

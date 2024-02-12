@@ -9,7 +9,7 @@ defined('ABSPATH') or die('No script kiddies please!');
 
 function mm_load_local_business_plugin()
 {
-    if (is_single() && has_category('service')) {
+    if (is_single() && has_category('services')) {
 
         $title = get_the_title();
         $description = get_the_excerpt();
@@ -23,7 +23,43 @@ function mm_load_local_business_plugin()
         $secondary_image = get_the_post_thumbnail_url();
         $phone = mm_get_website_data()['phone'];
         $price_range = '100000 - 5000000';
-    } elseif (is_tag() && has_category('service')) {
+?>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "EmploymentAgency",
+                "image": [
+                    "<?php echo $first_image; ?>",
+                    "<?php echo $secondary_image; ?>"
+                ],
+                "name": "<?php echo $title; ?>",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "<?php echo $alamat; ?>",
+                    "addressLocality": "<?php echo $kota; ?>",
+                    "addressRegion": "<?php echo $provinsi; ?>",
+                    "postalCode": "<?php echo $kodepos; ?>",
+                    "addressCountry": "ID"
+                },
+                "review": {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "4.9",
+                        "bestRating": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Murdhik"
+                    }
+                },
+                "url": "<?php echo $url; ?>",
+                "telephone": "<?php echo $phone; ?>",
+                "priceRange": "<?php echo $price_range; ?>"
+            }
+        </script>
+    <?php
+    } elseif (is_tag() && has_category('services')) {
         $title = single_tag_title('', false);
         $url = get_queried_object()->url;
         $post_id = get_the_ID();
@@ -35,44 +71,43 @@ function mm_load_local_business_plugin()
         $alamat = get_field('alamat', $post_id);
         $provinsi = get_field('provinsi', $post_id);
         $kodepos = get_field('kodepos', $post_id);
-    }
-
-?>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "EmploymentAgency",
-            "image": [
-                "<?php echo $first_image; ?>",
-                "<?php echo $secondary_image; ?>"
-            ],
-            "name": "<?php echo $title; ?>",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "<?php echo $alamat; ?>",
-                "addressLocality": "<?php echo $kota; ?>",
-                "addressRegion": "<?php echo $provinsi; ?>",
-                "postalCode": "<?php echo $kodepos; ?>",
-                "addressCountry": "ID"
-            },
-            "review": {
-                "@type": "Review",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "4.9",
-                    "bestRating": "5"
+    ?>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "EmploymentAgency",
+                "image": [
+                    "<?php echo $first_image; ?>",
+                    "<?php echo $secondary_image; ?>"
+                ],
+                "name": "<?php echo $title; ?>",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "<?php echo $alamat; ?>",
+                    "addressLocality": "<?php echo $kota; ?>",
+                    "addressRegion": "<?php echo $provinsi; ?>",
+                    "postalCode": "<?php echo $kodepos; ?>",
+                    "addressCountry": "ID"
                 },
-                "author": {
-                    "@type": "Person",
-                    "name": "Murdhik"
-                }
-            },
-            "url": "<?php echo $url; ?>",
-            "telephone": "<?php echo $phone; ?>",
-            "priceRange": "<?php echo $price_range; ?>"
-        }
-    </script>
+                "review": {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "4.9",
+                        "bestRating": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Murdhik"
+                    }
+                },
+                "url": "<?php echo $url; ?>",
+                "telephone": "<?php echo $phone; ?>",
+                "priceRange": "<?php echo $price_range; ?>"
+            }
+        </script>
 <?php
+    }
 }
 
 add_action('wp_head', 'mm_load_local_business_plugin');

@@ -10,7 +10,7 @@ defined('ABSPATH') or die('No script kiddies please!');
 ?>
 
 
-<section id="hero" class="section higher">
+<section id="hero" class="section default">
     <div class="container h100">
         <div id="hero-wr" class="h100">
             <!-- hero left -->
