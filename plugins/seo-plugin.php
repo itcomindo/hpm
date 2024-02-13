@@ -33,7 +33,7 @@ function mm_seo_plugin()
         $description = substr(get_the_title() . ' ' . get_the_excerpt(), 0, 160);
         $robots = 'index, follow';
     } elseif (is_page_template('service-page.php')) {
-        $title = 'Perusahaan Outsourcing Penyedia ' . get_the_title() . ' | ' . get_bloginfo('name');
+        $title = get_the_title() . ' | ' . get_bloginfo('name');
         $description = substr($title . ' ' . get_the_excerpt(), 0, 160);
         $robots = 'index, follow';
     } elseif (is_page_template('contact-page.php')) {
