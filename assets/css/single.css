@@ -40,3 +40,27 @@
   height: 100%;
   object-fit: contain;
 }
+
+ul.tags-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 8px;
+  font-style: italic;
+  font-size: 80%;
+}
+ul.tags-list li {
+  position: relative;
+  margin-right: 6px;
+}
+ul.tags-list li a {
+  border-bottom: 1px dashed var(--transparent-dark-3);
+}
+ul.tags-list li:after {
+  content: ",";
+}
+ul.tags-list li:last-child:after {
+  display: none;
+  margin-right: 0;
+}
