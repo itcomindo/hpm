@@ -51,10 +51,17 @@ function mm_get_website_data()
 
 
     //experience
-    $year_start = 2004;
+    $year_start = carbon_get_theme_option('year_p');
     $year_now = date('Y');
     // $data['experience'] = $experience;
     $data['experience'] =  date('Y') - 2000;
+
+
+    //jumlah-customer
+    $data['jumlah-customer'] = carbon_get_theme_option('customer_p');
+
+    //jumlah-staff
+    $data['jumlah-staff'] = carbon_get_theme_option('staff_p');
 
 
 

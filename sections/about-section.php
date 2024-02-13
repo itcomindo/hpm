@@ -45,15 +45,15 @@ defined('ABSPATH') or die('No script kiddies please!');
                         <li class="borad-10 hover-to-top">
                             <div class="ab-top">
                                 <span class="list-text">Mengelola</span>
-                                <span class="list-num section-head section-head-medium">500</span>
-                                <span class="list-text">Staff terlatih</span>
+                                <span class="list-num section-head section-head-medium">3000</span>
+                                <span class="list-text">Lebih Staff</span>
                             </div>
                         </li>
                         <li class="borad-10 hover-to-top">
                             <div class="ab-top">
                                 <span class="list-text">Dipercaya</span>
                                 <span class="list-num section-head section-head-medium">300</span>
-                                <span class="list-text">Perusahaan</span>
+                                <span class="list-text">Lebih Perusahaan</span>
                             </div>
                         </li>
                     </ul>

@@ -52,9 +52,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         jQuery($greeting).slideUp();
                         $whatsappBox.slideDown();
                         jQuery('#mobap').slideUp();
+                        jQuery('#hero-data').slideUp();
                     });
                     //close
                     jQuery('.wa-close ').on('click', function () {
+                        jQuery('#hero-data').slideDown();
                         jQuery('#mobap').slideDown();
                         $whatsappBox.slideUp();
                     });

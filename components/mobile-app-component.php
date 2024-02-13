@@ -12,13 +12,13 @@ defined('ABSPATH') or die('No script kiddies please!');
     <div id="mobap-wr">
         <ul class="list-no-style mobap-list">
             <li>
-                <a href="/">
+                <a href="/#about">
                     <i class="fas fa-house"></i>
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="/">
+                <a href="/#services">
                     <i class="fas fa-house"></i>
                     <span>Service</span>
                 </a>
@@ -29,11 +29,9 @@ defined('ABSPATH') or die('No script kiddies please!');
                     <span>Contact</span>
                 </a>
             </li>
-            <li>
-                <a href="/">
-                    <i class="fas fa-house"></i>
-                    <span>Home</span>
-                </a>
+            <li class="header-menu-trigger">
+                <i class="fas fa-bars"></i>
+                <span>Menu</span>
             </li>
         </ul>
     </div>

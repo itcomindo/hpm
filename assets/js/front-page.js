@@ -1,6 +1,36 @@
 window.addEventListener('DOMContentLoaded', (event) => {
 
 
+
+
+
+    //show hero banner start
+
+
+    function heroBanner() {
+        function launch() {
+            setTimeout(function () {
+                jQuery('#hero-data').addClass('active');
+
+                setTimeout(function () {
+                    jQuery('#hero-data').addClass('final');
+                }, 1000);
+
+            }, 1000);
+        }
+        launch();
+    }
+    heroBanner();
+
+
+    //show hero banner end
+
+
+
+
+
+
+
     function rekananList() {
         jQuery('.rekanan-list').slick({
             centerMode: true,

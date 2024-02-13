@@ -30,6 +30,23 @@ function crb_attach_theme_options()
             //text email
             Field::make('text', 'email_p', 'Email'),
 
+            //text type number tahun berdiri
+            Field::make('text', 'year_p', 'Tahun Berdiri')
+                ->set_default_value('2000')
+                ->set_attribute('type', 'number'),
+
+            //text type number customer
+            Field::make('text', 'customer_p', 'Customer')
+                ->set_default_value('300')
+                ->set_attribute('type', 'number'),
+
+            //text type number staff
+            Field::make('text', 'staff_p', 'Staff')
+                ->set_default_value('3100')
+                ->set_attribute('type', 'number'),
+
+
+
             //complex sosmed
             Field::make('complex', 'sosmed_p', 'Sosial Media')
                 ->set_layout('tabbed-horizontal')
