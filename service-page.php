@@ -20,7 +20,7 @@ $perusahaan = mm_get_website_data()['nama-perusahaan'];
             </h1>
 
             <span class="sh-desc">
-                <?php echo esc_html($perusahaan); ?> menyediakan layanan outsourcing terlengkap di Indonesia. Kami siap membantu Anda dalam mencari tenaga kerja outsourcing yang profesional, legal dan resmi. Penawaran kami <b><?php echo get_the_title(); ?></b> atau hubungi nomor telepon <?php echo mm_get_website_data()['phone']; ?>
+                <?php echo esc_html($perusahaan); ?> perusahaan outsourcing terlengkap di Indonesia. Kami siap bantu meyalurkan tenaga kerja terlatih, terdidik, profesional dan bisa andalkan. Penawaran kami <b><?php echo get_the_title(); ?></b> atau hubungi nomor telepon <?php echo mm_get_website_data()['phone']; ?>
             </span>
 
 
@@ -37,12 +37,20 @@ $perusahaan = mm_get_website_data()['nama-perusahaan'];
                 <div class="fim-wr">
                     <img class="find-this" src="<?php echo mm_get_featured_image(); ?>" alt="<?php echo esc_html(get_the_title()); ?>" title="<?php echo esc_html(get_the_title()); ?>">
                 </div>
+
+
+                <h2 class="section-head section-head-small">
+                    <?php echo esc_html(get_the_title()); ?>
+                </h2>
+
+
+
                 <?php the_content(); ?>
 
 
 
                 <div class="other-service">
-                    <h3 class="section-head section-head-medium">Penawaran Jasa Outsourcing Kami Lainnya:</h3>
+                    <h3 class="section-head section-head-small">Penawaran Jasa Outsourcing Kami Lainnya:</h3>
                     <?php
                     mm_get_service_page_query();
                     ?>

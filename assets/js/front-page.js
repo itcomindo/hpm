@@ -6,23 +6,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
     //counter number start
-
-    // function counterNumber() {
-    //     var $num = jQuery('.list-num');
-    //     $num.each(function () {
-    //         var $this = jQuery(this);
-    //         jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-    //             duration: 2000,
-    //             easing: 'swing',
-    //             step: function () {
-    //                 $this.text(Math.ceil(this.Counter));
-    //             }
-    //         });
-    //     });
-    // }
-    // counterNumber();
-
-
     function counterNumber() {
         var $num = jQuery('.list-num');
         $num.each(function () {
