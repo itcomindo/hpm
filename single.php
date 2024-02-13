@@ -10,7 +10,7 @@ get_header();
 
 
 if (has_category('services')) {
-    get_template_part('sections/content-section');
+    get_template_part('template-parts/service-single-template');
 } else {
     get_template_part('sections/blog-section');
 }
