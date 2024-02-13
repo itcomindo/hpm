@@ -45,6 +45,9 @@ function crb_attach_theme_options()
                 ->set_default_value('3100')
                 ->set_attribute('type', 'number'),
 
+            //call testmonial fields from testimonial-options.php
+            ...mm_testimonial_fields(),
+
 
 
             //complex sosmed

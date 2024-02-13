@@ -49,7 +49,13 @@ if (is_single()) {
         <div id="the-sing-wr">
 
             <div id="the-content">
+                <div class="fim-wr">
+                    <img class="find-this" src="<?php echo mm_get_featured_image(); ?>" alt="<?php echo esc_html(get_the_title()); ?>" title="<?php echo esc_html(get_the_title()); ?>">
+                </div>
                 <?php the_content(); ?>
+                <?php
+                mm_get_post_tags();
+                ?>
             </div>
 
 
