@@ -10,12 +10,29 @@ defined('ABSPATH') or die('No script kiddies please!');
 function mm_get_service_page_query()
 {
     //create args to get the page that has page template of services
-    $args = array(
-        'post_type' => 'page',
-        'meta_key' => '_wp_page_template',
-        'meta_value' => 'service-page.php',
-        'order' => 'ASC',
-    );
+
+    if (is_page_template('service-page.php')) {
+        //get the page id
+        $page_id = get_the_ID();
+        $args = array(
+            'post_type' => 'page',
+            'meta_key' => '_wp_page_template',
+            'meta_value' => 'service-page.php',
+            'order' => 'ASC',
+            'post__not_in' => array($page_id)
+        );
+    } else {
+        $args = array(
+            'post_type' => 'page',
+            'meta_key' => '_wp_page_template',
+            'meta_value' => 'service-page.php',
+            'order' => 'ASC',
+        );
+    }
+
+
+
+
     $sq = new WP_Query($args);
     if ($sq->have_posts()) {
 
@@ -31,16 +48,31 @@ function mm_get_service_page_query()
             $penawaran = get_field('penawaran_service');
             $description = mm_get_website_data()['nama-perusahaan'] . ' menyediakan layanan ' . $title . ' (' . $penawaran . ' ) Layanan ini tersedia diseluruh Indonesia';
 
-
             $link = get_the_permalink();
+
+            if (is_page_template('service-page.php')) {
 ?>
-            <li class="srv hover-to-top">
-                <i class="fab fa-whatsapp"></i>
-                <h3 class="section-head section-head-small"><?php echo esc_html($title); ?></h3>
-                <span class="text-small"><?php echo esc_html($description); ?>.</span>
-                <a href="<?php echo esc_html($link); ?>" class="the-btn big" title="<?php echo esc_html($title); ?>">Lihat Penawaran</a>
-            </li>
+                <li>
+                    <div class="other-head-wr">
+                        <h3 class="section-head section-head-small other-head"><?php echo esc_html($title); ?></h3>
+                    </div>
+                    <div class="other-content-wr">
+                        <span class="other-content"><?php echo $description; ?></span>
+                        <a href="<?php echo esc_html($link); ?>" class="the-btn big" title="<?php echo esc_html($title); ?>">Lihat Penawaran</a>
+                    </div>
+                </li>
+            <?php
+            } else {
+                $icon = '<i class="fab fa-whatsapp"></i>';
+            ?>
+                <li class="srv hover-to-top">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3 class="section-head section-head-small"><?php echo esc_html($title); ?></h3>
+                    <span class="text-small"><?php echo esc_html($description); ?>.</span>
+                    <a href="<?php echo esc_html($link); ?>" class="the-btn big" title="<?php echo esc_html($title); ?>">Lihat Penawaran</a>
+                </li>
     <?php
+            }
         }
         echo '</ul>';
     } else {

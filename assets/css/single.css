@@ -64,3 +64,38 @@ ul.tags-list li:last-child:after {
   display: none;
   margin-right: 0;
 }
+
+/**
+=========================
+* Other Service Section
+* @todo other service section
+*=========================
+*/
+
+.page ul.srv-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page .other-content-wr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 8px;
+}
+.page ul.srv-list {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+.page ul.srv-list li {
+  padding: 1rem;
+}
+.page ul.srv-list li:nth-child(odd) {
+  background-color: #eee;
+}
+.page ul.srv-list li a.the-btn {
+  color: var(--color-accent-2-dark);
+  padding: 0;
+  border-bottom: 1px solid var(--color-accent-2-dark);
+}

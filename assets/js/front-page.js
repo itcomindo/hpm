@@ -4,6 +4,67 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+
+    //counter number start
+
+    // function counterNumber() {
+    //     var $num = jQuery('.list-num');
+    //     $num.each(function () {
+    //         var $this = jQuery(this);
+    //         jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+    //             duration: 2000,
+    //             easing: 'swing',
+    //             step: function () {
+    //                 $this.text(Math.ceil(this.Counter));
+    //             }
+    //         });
+    //     });
+    // }
+    // counterNumber();
+
+
+    function counterNumber() {
+        var $num = jQuery('.list-num');
+        $num.each(function () {
+            var $this = jQuery(this);
+            if (!$this.hasClass('counted')) {
+                jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function () {
+                        $this.text(Math.ceil(this.Counter));
+                    },
+                    complete: function () {
+                        $this.addClass('counted');
+                    }
+                });
+            }
+        });
+    }
+
+    var hasCounted = false; // Tambahkan flag untuk memeriksa apakah animasi sudah dijalankan
+
+    jQuery(window).scroll(function () {
+        if (!hasCounted) { // Cek jika animasi belum dijalankan
+            var hT = jQuery('#about').offset().top,
+                hH = jQuery('#about').outerHeight(),
+                wH = jQuery(window).height(),
+                wS = jQuery(this).scrollTop();
+            if (wS > (hT + hH - wH)) {
+                counterNumber();
+                hasCounted = true; // Setelah dijalankan, set flag menjadi true
+            }
+        }
+    });
+
+
+
+    //counter number end
+
+
+
+
+
     //show hero banner start
 
 

@@ -38,6 +38,19 @@ $perusahaan = mm_get_website_data()['nama-perusahaan'];
                     <img class="find-this" src="<?php echo mm_get_featured_image(); ?>" alt="<?php echo esc_html(get_the_title()); ?>" title="<?php echo esc_html(get_the_title()); ?>">
                 </div>
                 <?php the_content(); ?>
+
+
+
+                <div class="other-service">
+                    <h3 class="section-head section-head-medium">Penawaran Jasa Outsourcing Kami Lainnya:</h3>
+                    <?php
+                    mm_get_service_page_query();
+                    ?>
+                </div>
+
+
+
+
             </div>
 
 
