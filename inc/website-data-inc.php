@@ -50,6 +50,13 @@ function mm_get_website_data()
     $data['logo-webp'] = get_template_directory_uri() . '/assets/images/logo-webp.webp';
 
 
+    //experience
+    $year_start = 2004;
+    $year_now = date('Y');
+    // $data['experience'] = $experience;
+    $data['experience'] =  date('Y') - 2000;
+
+
 
 
 

@@ -760,13 +760,14 @@ li.srv a.the-btn:before {
 
 #about-wr {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(calc(768px / 2), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   gap: 1rem;
 }
 #ab-left {
   display: flex;
   flex-direction: column;
+  padding: 8px;
 }
 
 #ab-right {
@@ -774,6 +775,7 @@ li.srv a.the-btn:before {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 8px;
   gap: 1rem;
 }
 
@@ -787,7 +789,7 @@ a.ab-btn {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .ab-list li {
   border: 1px solid var(--transparent-dark-2);
@@ -1081,6 +1083,37 @@ ul.mobap-list li a span {
   font-size: 90%;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+/**
+=========================
+* Branch Section StyleCss
+* @todo branch section
+*=========================
+*/
+
+#branch-wr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3.5rem;
+}
+
+#br-bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul.branch-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+ul.branch-list li {
+  text-align: left;
 }
 
 /**

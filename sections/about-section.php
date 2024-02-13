@@ -31,7 +31,7 @@ defined('ABSPATH') or die('No script kiddies please!');
                         <li class="borad-10 shadow-s hover-to-top">
                             <div class="ab-top">
                                 <span class="list-text">Berpengalaman</span>
-                                <span class="list-num section-head section-head-medium">50</span>
+                                <span class="list-num section-head section-head-medium"><?php echo esc_html(mm_get_website_data()['experience']); ?></span>
                                 <span class="list-text">Tahun</span>
                             </div>
                         </li>
