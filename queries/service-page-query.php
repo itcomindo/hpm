@@ -23,8 +23,13 @@ function mm_get_service_page_query()
 
         while ($sq->have_posts()) {
             $sq->the_post();
-            $title = get_the_title();
-            $description = mm_get_website_data()['nama-perusahaan'] . ' menyediakan layanan ' . $title . ' (' . get_the_excerpt() . ' ) Layanan ini tersedia diseluruh Indonesia';
+            if (get_field('short_title')) {
+                $title = get_field('short_title');
+            } else {
+                $title = get_the_title();
+            }
+            $penawaran = get_field('penawaran_service');
+            $description = mm_get_website_data()['nama-perusahaan'] . ' menyediakan layanan ' . $title . ' (' . $penawaran . ' ) Layanan ini tersedia diseluruh Indonesia';
 
 
             $link = get_the_permalink();

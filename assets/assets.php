@@ -53,7 +53,7 @@ function mm_loads_style_and_scripts()
     }
 
 
-    if (is_single() || is_tag()) {
+    if (is_single() || is_tag() || is_page_template('service-page.php')) {
 
         //call single.css from assets/css
         wp_enqueue_style('mm-single-css', get_template_directory_uri() . '/assets/css/single.css', array(), $theme_version, 'all');
