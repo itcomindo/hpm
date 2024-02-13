@@ -17,7 +17,7 @@ defined('ABSPATH') or die('No script kiddies please!');
             <!-- service top -->
             <div id="service-top">
                 <h2 class="section-head section-head-big">Services</h2>
-                <span class="lw75-mw100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, iure? Doloribus ipsum tenetur nulla sapiente modi quos eum perspiciatis dolore cumque quis. Vero consequuntur saepe exercitationem necessitatibus sunt at in.</span>
+                <span class="lw75-mw100">Menyediakan tenaga kerja siap kerja yang siap ditempatkan dan ditugaskan diseluruh wilayah di Indonesia. Bidang-bidang kerja yang kami layani antaralain adalah:</span>
             </div>
             <!-- service bottom -->
             <div id="service-bot">

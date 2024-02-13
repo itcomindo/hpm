@@ -28,28 +28,28 @@ defined('ABSPATH') or die('No script kiddies please!');
                 </div>
                 <div id="ab-content">
                     <ul class="list-no-style ab-list">
-                        <li class="borad-10 shadow-s hover-to-top">
+                        <li class="borad-10 hover-to-top">
                             <div class="ab-top">
                                 <span class="list-text">Berpengalaman</span>
                                 <span class="list-num section-head section-head-medium"><?php echo esc_html(mm_get_website_data()['experience']); ?></span>
                                 <span class="list-text">Tahun</span>
                             </div>
                         </li>
-                        <li class="borad-10 shadow-s hover-to-top">
+                        <li class="borad-10 hover-to-top">
                             <div class="ab-top">
                                 <span class="list-text">Melayani</span>
                                 <span class="list-num section-head section-head-medium">34</span>
                                 <span class="list-text">Provinsi</span>
                             </div>
                         </li>
-                        <li class="borad-10 shadow-s hover-to-top">
+                        <li class="borad-10 hover-to-top">
                             <div class="ab-top">
                                 <span class="list-text">Mengelola</span>
                                 <span class="list-num section-head section-head-medium">500</span>
                                 <span class="list-text">Staff terlatih</span>
                             </div>
                         </li>
-                        <li class="borad-10 shadow-s hover-to-top">
+                        <li class="borad-10 hover-to-top">
                             <div class="ab-top">
                                 <span class="list-text">Dipercaya</span>
                                 <span class="list-num section-head section-head-medium">300</span>
