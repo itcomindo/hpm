@@ -51,9 +51,37 @@ $perusahaan = mm_get_website_data()['nama-perusahaan'];
 
                 <div class="other-service">
                     <h3 class="section-head section-head-small">Penawaran Jasa Outsourcing Kami Lainnya:</h3>
-                    <?php
-                    mm_get_service_page_query();
-                    ?>
+                    <ul class="list-no-style srv-list">
+                        <?php
+                        $args = mm_get_service_page_query();
+                        $sm = new WP_Query($args);
+                        if ($sm->have_posts()) {
+                            while ($sm->have_posts()) {
+                                $sm->the_post();
+                                if (get_field('short_title')) {
+                                    $title = get_field('short_title');
+                                } else {
+                                    $title = get_the_title();
+                                }
+                                $penawaran = get_field('penawaran_service');
+                                $description = mm_get_website_data()['nama-perusahaan'] . ' menyediakan layanan ' . $title . ' (' . $penawaran . ' ) Layanan ini tersedia diseluruh Indonesia';
+
+                                $link = get_the_permalink();
+                        ?>
+                                <li>
+                                    <h3 class="other-head section-head"><?php echo esc_html($title); ?></h3>
+                                    <span><?php echo esc_html($description); ?></span>
+
+                                    <a class="the-btn" href="<?php echo get_the_permalink(); ?>" title="<?php echo esc_html($title); ?>">Lihat Penawaran</a>
+                                </li>
+
+                        <?php
+                            }
+                        } else {
+                            echo 'no services found';
+                        }
+                        ?>
+                    </ul>
                 </div>
 
 

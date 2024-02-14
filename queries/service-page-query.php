@@ -12,7 +12,6 @@ function mm_get_service_page_query()
     //create args to get the page that has page template of services
 
     if (is_page_template('service-page.php')) {
-        //get the page id
         $page_id = get_the_ID();
         $args = array(
             'post_type' => 'page',
