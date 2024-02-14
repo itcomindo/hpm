@@ -22,13 +22,7 @@ defined('ABSPATH') || exit;
 
 <body <?php body_class(); ?>>
     <?php
-
     get_template_part('template-parts/header-template');
-
-
-
     wp_body_open();
     ?>
-
-
     <main>
