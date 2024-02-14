@@ -26,36 +26,27 @@ defined('ABSPATH') or die('No script kiddies please!');
             <div id="foo-bot">
 
                 <div id="foo-left" class="foo-col">
-                    <h3 class="foo-head with-square-box color-accent-2">Footer Head</h3>
+                    <h3 class="foo-head with-square-box color-accent-1-lightness">About Us</h3>
                     <div class="foo-inner">
-                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed reprehenderit at, rem deleniti animi assumenda nam aspernatur quibusdam ullam nobis voluptatum cum facere voluptas sapiente quos molestiae fugit enim explicabo!</span>
+                        <p>PT. Husnan Putra Mandiri adalah perusahaan outsourcing resmi yang didirikan pada tahun <?php echo mm_get_website_data()['experience-start']; ?>. Hingga saat ini kami telah memiliki pengalaman lebih dari <?php echo esc_html(mm_get_website_data()['experience']); ?> tahun.</p>
+                        <p>Kami menerima permintaan pengadaan tenaga kerja untuk berbagai macam bidang keseluruh Indonesia.</p>
+                        <p>Kami sangat fokus pada eksptektasi para mitra kami: <span class="color-accent-1-lightness">menjalankan usaha yang efisien dan efektif dengan tetap mendapatkan hasil yang maksimal.</span></p>
                     </div>
                 </div>
                 <div id="foo-mid" class="foo-col">
-                    <h3 class="foo-head with-square-box color-accent-2">Footer Head</h3>
+                    <h3 class="foo-head with-square-box color-accent-1-lightness">Menu</h3>
                     <div class="foo-inner">
-                        <nav id="footer-nav">
-                            <ul class="list-no-style vertical-menu">
-                                <li><a href="#">Terms of Service</a></li>
-                                <li><a href="#">Disclaimer</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </nav>
+                        <?php
+                        mm_get_footer_menu();
+                        ?>
                     </div>
                 </div>
                 <div id="foo-right" class="foo-col">
-                    <h3 class="foo-head with-square-box color-accent-2">Footer Head</h3>
+                    <h3 class="foo-head with-square-box color-accent-1-lightness">Services</h3>
                     <div class="foo-inner">
-                        <nav id="services-nav">
-                            <ul class="list-no-style vertical-menu">
-                                <li><a href="#">Outsourcing Security</a></li>
-                                <li><a href="#">Bodyguard</a></li>
-                                <li><a href="#">Driver</a></li>
-                                <li><a href="#">Operator Produksi</a></li>
-                                <li><a href="#">Hotelier</a></li>
-                            </ul>
-                        </nav>
+                        <?php
+                        get_template_part('components/service-page-list-component');
+                        ?>
                     </div>
                 </div>
             </div>

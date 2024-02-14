@@ -6,6 +6,23 @@
 
 defined('ABSPATH') or die('No script kiddies please!');
 
+/**
+ *=========================
+ * Custom Functions
+ *=========================
+ */
+
+/**
+ * to check current is dev mode or not
+ */
+function mm_is_devmode()
+{
+    if (isset($_SERVER['REMOTE_ADDR']) && in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'), true)) {
+        return true;
+    }
+    return false;
+}
+
 //disable gutenberg
 add_filter('use_block_editor_for_post', '__return_false', 10);
 

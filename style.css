@@ -22,6 +22,7 @@
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
   --font-display: "Rajdhani", sans-serif;
+  --color-accent-1-lightness: #98bcde;
   --color-accent-1-light: #508dc6;
   --color-accent-1: #306494;
   --color-accent-1-dark: #224668;
@@ -407,21 +408,26 @@ a {
   color: inherit;
 }
 
+button.the-btn,
 a.the-btn {
   display: block;
   width: max-content;
   line-height: 1.2;
 }
-button.the-btn {
-  width: max-content;
+button.the-btn i,
+a.the-btn i {
+  margin-right: 4px;
 }
 
+button.the-btn.big,
 a.the-btn.big {
   padding: 8px 1rem;
 }
+button.the-btn.bigger,
 a.the-btn.bigger {
   padding: 12px 2rem;
 }
+button.the-btn.biggest,
 a.the-btn.biggest {
   padding: 1rem 3rem;
 }
@@ -433,6 +439,7 @@ button.the-button {
   cursor: pointer;
 }
 
+button.the-btn.wa-bg,
 a.the-btn.wa-bg,
 a.the-btn.call-bg,
 a.the-btn.email-bg {
@@ -443,6 +450,7 @@ a.the-btn.email-bg {
   color: var(--color-light-1);
   overflow: hidden;
 }
+button.the-btn.wa-bg:before,
 a.the-btn.wa-bg:before,
 a.the-btn.call-bg:before,
 a.the-btn.email-bg:before {
@@ -457,12 +465,15 @@ a.the-btn.email-bg:before {
   left: 0;
   z-index: -1;
 }
+button.the-btn.wa-bg:before,
 a.the-btn.wa-bg:before {
   background: linear-gradient(to bottom, green, darkgreen);
 }
+button.the-btn.call-bg:before,
 a.the-btn.call-bg:before {
   background: linear-gradient(to bottom, red, darkred);
 }
+button.the-btn.email-bg:before,
 a.the-btn.email-bg:before {
   background: linear-gradient(to bottom, blue, darkblue);
 }
@@ -508,6 +519,7 @@ a.the-btn.email-bg:before {
 /**
 =========================
 * Pseudo Elements
+* @todo Pseudo Element
 *=========================
 */
 
@@ -525,6 +537,35 @@ a.the-btn.email-bg:before {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+}
+
+.with-square-box.color-accent-1-lightness:before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  background-color: var(--color-accent-1-lightness);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+/**
+=========================
+* Coloring
+* @todo Coloring
+*=========================
+*/
+.color-accent-1-lightness {
+  color: var(--color-accent-1-lightness);
+}
+.color-accent-1-light {
+  color: var(--color-accent-1-light);
+}
+.color-accent-1 {
+  color: var(--color-accent-1);
+}
+.color-accent-2 {
+  color: var(--color-accent-2);
 }
 
 /**
@@ -582,6 +623,11 @@ a.the-btn.email-bg:before {
 #header {
   height: 80px;
   background-color: var(--color-light-1);
+}
+
+body:not(home) #header {
+  border-bottom: 1px solid var(--transparent-dark-1);
+  box-shadow: 0 0 10px var(--transparent-dark-2);
 }
 
 #header-wr {
@@ -854,6 +900,61 @@ li.srv a.the-btn:before {
 
 /**
 =========================
+* Whatsapp Form
+* @todo Whatsapp Form
+*=========================
+*/
+
+.waf-wr {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.wf-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wf-item input,
+.wf-item textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 4px;
+  border-radius: 5px;
+  border: 1px solid var(--transparent-dark-4);
+}
+
+.wf-item textarea::placeholder,
+.wf-item input::placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item ::-webkit-input-placeholder {
+  color: grey;
+}
+
+.wf-item :-ms-input-placeholder {
+  color: grey;
+}
+
+.wf-item ::-ms-input-placeholder {
+  color: grey;
+}
+
+button#waf-submit {
+  padding: 6px 3rem;
+  border: 1px solid var(--transparent-dark-7);
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--transparent-dark-2);
+  cursor: pointer;
+}
+
+/**
+=========================
 * About Section StyleCss
 * @todo About Section StyleCss
 *=========================
@@ -967,6 +1068,10 @@ h3.foo-head {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.foo-inner li a:hover {
+  color: var(--color-accent-1-lightness);
 }
 
 /**

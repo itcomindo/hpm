@@ -51,10 +51,9 @@ function mm_get_website_data()
 
 
     //experience
-    $year_start = carbon_get_theme_option('year_p');
+    $data['experience-start'] = carbon_get_theme_option('year_p');
     $year_now = date('Y');
-    // $data['experience'] = $experience;
-    $data['experience'] =  date('Y') - 2000;
+    $data['experience'] =  date('Y') - $data['experience-start'];
 
 
     //jumlah-customer

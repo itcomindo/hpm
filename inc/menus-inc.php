@@ -12,7 +12,7 @@ function mm_register_menus()
     register_nav_menus(
         array(
             'header-menu' => 'Header Menu',
-            'footer-menu' => 'Footer Menu'
+            'footer-menu' => 'Footer Menu',
         )
     );
 }
@@ -50,7 +50,7 @@ function mm_get_footer_menu()
             'container_id' => 'footer-nav',
             'container_class' => 'h100',
             //menu
-            'menu_class' => 'list-no-style vertical-list footer-menu-list h100',
+            'menu_class' => 'list-no-style vertical-menu footer-menu-list h100',
 
         )
     );

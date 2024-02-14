@@ -21,9 +21,53 @@ defined('ABSPATH') or die('No script kiddies please!');
             </div>
             <!-- service bottom -->
             <div id="service-bot">
-
                 <?php
-                mm_get_service_page_query();
+                $args = mm_get_service_page_query();
+                $sq = new WP_Query($args);
+                if ($sq->have_posts()) {
+
+                    echo '<ul class="list-no-style srv-list">';
+
+                    while ($sq->have_posts()) {
+                        $sq->the_post();
+                        if (get_field('short_title')) {
+                            $title = get_field('short_title');
+                        } else {
+                            $title = get_the_title();
+                        }
+                        $penawaran = get_field('penawaran_service');
+                        $description = mm_get_website_data()['nama-perusahaan'] . ' menyediakan layanan ' . $title . ' (' . $penawaran . ' ) Layanan ini tersedia diseluruh Indonesia';
+
+                        $link = get_the_permalink();
+
+                        if (is_page_template('service-page.php')) {
+                ?>
+                            <li>
+                                <div class="other-head-wr">
+                                    <h3 class="section-head section-head-small other-head"><?php echo esc_html($title); ?></h3>
+                                </div>
+                                <div class="other-content-wr">
+                                    <span class="other-content"><?php echo $description; ?></span>
+                                    <a href="<?php echo esc_html($link); ?>" class="the-btn big" title="<?php echo esc_html($title); ?>">Lihat Penawaran</a>
+                                </div>
+                            </li>
+                        <?php
+                        } else {
+                            $icon = '<i class="fab fa-whatsapp"></i>';
+                        ?>
+                            <li class="srv hover-to-top">
+                                <i class="fab fa-whatsapp"></i>
+                                <h3 class="section-head section-head-small"><?php echo esc_html($title); ?></h3>
+                                <span class="text-small"><?php echo esc_html($description); ?>.</span>
+                                <a href="<?php echo esc_html($link); ?>" class="the-btn big" title="<?php echo esc_html($title); ?>">Lihat Penawaran</a>
+                            </li>
+                <?php
+                        }
+                    }
+                    echo '</ul>';
+                } else {
+                    mm_service_page_dummy();
+                }
                 ?>
 
 
