@@ -6,6 +6,29 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+        //fixed header start
+
+
+        function mm_fh() {
+            function mm_rfh() {
+                if (jQuery(window).scrollTop() > 140) {
+                    jQuery('#header').addClass('fixed animate__fadeInDown');
+                } else {
+                    jQuery('#header').removeClass('fixed animate__fadeInDown');
+                }
+            }
+            mm_rfh();
+            jQuery(window).on('scroll resize', mm_rfh);
+        }
+        mm_fh();
+
+
+
+
+        //fixed header end
+
+
+
 
         //desktop whatsappBox start
 
@@ -94,17 +117,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
                     var closeHeaderMenu = '<div class="close-header-menu">X</div>';
                     jQuery('nav#header-nav').prepend(closeHeaderMenu);
 
-                    //opem
+                    //open
                     jQuery('.header-menu-trigger').on('click', function () {
                         jQuery('nav#header-nav').addClass('active');
                         mmcta.show();
                         jQuery('nav#header-nav').prepend(mmcta);
+                        jQuery('body').addClass('no-scroll');
+                        jQuery('#mobap').slideUp();
                     });
 
                     //close
                     jQuery('.close-header-menu').on('click', function () {
                         jQuery('nav#header-nav').removeClass('active');
                         mmcta.hide();
+                        jQuery('body').removeClass('no-scroll');
+                        jQuery('#mobap').slideDown();
                     });
                 } else {
                     jQuery('nav#header-nav .close-header-menu').remove();
@@ -113,7 +140,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 }
             }
             hm();
-            //resize
             jQuery(window).resize(function () {
                 hm();
             });

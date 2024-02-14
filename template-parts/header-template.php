@@ -9,7 +9,7 @@ defined('ABSPATH') or die('No script kiddies please!');
 get_template_part('template-parts/topbar-template');
 ?>
 
-<header id="header" class="section">
+<header id="header" class="section animate__animated">
     <div class="container h100">
         <div id="header-wr" class="h100">
             <!-- header left -->

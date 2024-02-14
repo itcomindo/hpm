@@ -133,6 +133,9 @@ ul.tags-list li:last-child:after {
   height: 100%;
   object-fit: contain;
 }
+.val-wrong {
+  font-size: 80%;
+}
 /**
 =========================
 * Gallery Page

@@ -94,6 +94,10 @@ body {
   line-height: 1.7;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 /**
 =========================
 * Block
@@ -630,6 +634,28 @@ body:not(home) #header {
   box-shadow: 0 0 10px var(--transparent-dark-2);
 }
 
+#header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 555;
+  width: 100%;
+  background-color: transparent;
+}
+#header.fixed:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-accent-1);
+  z-index: -1;
+}
+#header.fixed li a,
+#header.fixed .header-menu-trigger {
+  color: var(--color-light-2);
+}
 #header-wr {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -1421,14 +1447,14 @@ ul.branch-list li {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: black;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    z-index: 8888;
+    z-index: 8888888;
     transform: translateX(-100%);
+    visibility: hidden;
     transition: all 0.3s ease;
   }
   nav#header-nav:before {
@@ -1447,6 +1473,7 @@ ul.branch-list li {
   nav#header-nav.active {
     transform: translateX(0);
     transition: all 0.3s ease;
+    visibility: visible;
   }
   ul.list-no-style.horizontal-list {
     margin-top: 2rem;
