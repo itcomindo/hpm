@@ -13,7 +13,7 @@ defined('ABSPATH') or die('No script kiddies please!');
         <div id="branch-wr">
             <div id="br-top">
                 <h2 class="section-head section-head-medium" id="br-head">Kantor Cabang dan Perwakilan</h2>
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, quia earum. Similique, doloribus saepe excepturi voluptatem expedita, reiciendis itaque voluptatibus nesciunt facere ullam quas perferendis porro? Blanditiis modi odio repellendus!</span>
+                <span>PT. Husnan Putra Mandiri memiliki kantor cabang dan perwakilan di sejumlah kota-kota besar di Indonesia.</span>
             </div>
             <div id="br-bot">
                 <ul class="list-no-style branch-list">

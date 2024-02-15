@@ -115,12 +115,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
     rekananList();
 
 
+    //testimonial list start
+
+
     function testimonialList() {
         jQuery('.testi-list').slick({
             centerMode: true,
             centerPadding: '60px',
             slidesToShow: 3,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2000,
             arrows: false,
             pauseOnHover: true,
@@ -155,4 +158,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     }
     testimonialList();
+
+    //testimonial list end
+
+
+
+
 });

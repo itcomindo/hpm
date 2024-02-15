@@ -35,14 +35,24 @@ defined('ABSPATH') or die('No script kiddies please!');
 function mm_get_dummy_testimonial()
 {
     echo '<div class="testi-list">';
+    $c = 0;
     for ($i = 0; $i < 7; $i++) {
-
+        $c++;
+        if ($c = 3) {
 ?>
-        <div class="testi">
-            <span class="testi-name">PT. Martapa Hutagaol INC</span>
-            <blockquote class="testi-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, incidunt totam quis ipsa, qui dolor itaque voluptatum.</blockquote>
-        </div>
+            <div class="testi">
+                <span class="testi-name">PT. Martapa Hutagaol INC</span>
+                <blockquote class="testi-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, incidunt totam quis ipsa, qui dolor itaque voluptatum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</blockquote>
+            </div>
         <?php
+        } else {
+        ?>
+            <div class="testi">
+                <span class="testi-name">PT. Martapa Hutagaol INC</span>
+                <blockquote class="testi-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, incidunt totam quis ipsa, qui dolor itaque voluptatum.</blockquote>
+            </div>
+        <?php
+        }
     }
     echo '</div>';
 }
