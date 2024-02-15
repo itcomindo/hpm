@@ -4,7 +4,7 @@
 * Description: 	HPM is a simple and clean theme with
 * Author: 		Husnan Putra Mandiri
 * Author URI: 	https://budiharyono.id/
-* Version: 	RC.1.0.0
+* Version: 	RC.2.0.0
 * License: 	GPL-2.0+
 * License URI: 	http://www.gnu.org/licenses/gpl-2.0.txt
 */
@@ -362,10 +362,15 @@ ol.list-no-style {
   list-style: none;
   padding: 0;
   margin: 0;
+  -webkit-margin-before: 0;
   margin-block-start: 0;
+  -webkit-margin-after: 0;
   margin-block-end: 0;
+  -webkit-margin-start: 0;
   margin-inline-start: 0;
+  -webkit-margin-end: 0;
   margin-inline-end: 0;
+  -webkit-padding-start: 0;
   padding-inline-start: 0;
   box-sizing: border-box;
   position: relative;
@@ -415,6 +420,8 @@ a {
 button.the-btn,
 a.the-btn {
   display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   line-height: 1.2;
 }
@@ -730,6 +737,7 @@ a.header-logo-wr img.find-this {
 .thtop a img.find-this {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -817,6 +825,8 @@ h3.th-title {
 .stars {
   color: gold;
   font-size: 14px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   margin-top: -2rem;
 }
@@ -949,9 +959,32 @@ li.srv {
   box-shadow: 0 0 10px 0 var(--transparent-dark-3);
   border-radius: 10px;
 }
+
+.srv-img-wr {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.srv-img-wr a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 10px;
+}
+.srv-img-wr img.find-this {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 li.srv i {
   font-size: 2rem;
 }
+li.srv h3 a {
+  font-weight: 600 !important;
+}
+li.srv h3 a,
 li.srv a.the-btn {
   position: relative;
   color: var(--color-accent-2);
@@ -994,6 +1027,314 @@ li.srv a.the-btn:before {
   padding: 8px 4px;
   border-radius: 5px;
   border: 1px solid var(--transparent-dark-4);
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
 }
 
 .wf-item textarea::placeholder,
@@ -1239,6 +1580,7 @@ h3.foo-head {
   left: 0;
   background-color: var(--transparent-dark-2);
   border-radius: 50%;
+  -webkit-filter: blur(5px);
   filter: blur(5px);
 }
 
@@ -1283,6 +1625,7 @@ h3.foo-head {
   background-color: var(--transparent-dark-7);
   bottom: -15px;
   border-radius: 50%;
+  -webkit-filter: blur(5px);
   filter: blur(5px);
 }
 #wa-wr {
@@ -1619,6 +1962,8 @@ ul.branch-list li {
   .stars {
     color: gold;
     font-size: 14px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin-top: 0;
   }
@@ -1674,6 +2019,8 @@ ul.branch-list li {
   .stars {
     color: gold;
     font-size: 80%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin-top: 0;
     position: relative;
