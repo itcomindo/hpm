@@ -15,22 +15,6 @@ function crb_attach_theme_options()
     $container = Container::make('theme_options', __('Theme Options'))
         ->add_fields([
 
-
-            //checkbox main site or not
-            Field::make('checkbox', 'main_site', 'Main Site')
-                ->set_help_text('Check this if this is the main site')
-                ->set_option_value('yes')
-                ->set_default_value(true),
-
-            Field::make('html', 'is_not_main_site', 'label')
-                ->set_html('<p style="color:red;">Jangan lupa untuk merubah front page jadi latest post jika anda tidak memilih ini.</p>')
-                ->set_conditional_logic([
-                    [
-                        'field' => 'main_site',
-                        'value' => false,
-                    ],
-                ]),
-
             // nama perusahaan
             Field::make('text', 'name_p', 'Nama Perusahaan'),
 
