@@ -15,7 +15,7 @@ defined('ABSPATH') or die('No script kiddies please!');
             <div id="ab-left">
                 <span class="text-medium"><?php echo esc_html(mm_get_website_data()['nama-perusahaan']); ?></span>
                 <h2 class="section-head section-head-medium">Solusi Pengadaan Tenaga Kerja</h2>
-                <span>Dengan secara konsisten kami terus berinovasi dan meningkatkan mutu layanan perusahaan termasuk mengupgrade skill dan knowledge para staff yang bertugas perusahaan Anda.</span>
+                <span>Dengan secara konsisten kami terus berinovasi dan meningkatkan mutu layanan perusahaan termasuk mengupgrade skill dan knowledge para staff yang bertugas di perusahaan Anda.</span>
                 <a href="//wa.me/<?php echo esc_html(mm_get_website_data()['phone-url']); ?>" class="the-btn hover-to-top ab-btn big borad-5 shadow-s wa-bg"><i class="fab fa-whatsapp"></i> Layanan Konsultasi</a>
             </div>
 

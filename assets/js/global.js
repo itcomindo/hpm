@@ -34,6 +34,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
         function desktopWhatsappBox() {
+
+            function animateGrtm() {
+                setTimeout(function () {
+                    jQuery('#grtm').addClass('active animate__fadeInUp');
+                }, 2000);
+            }
+
             function dwb() {
                 var $whatsappBox = jQuery('#wa-pr');
                 var $waOpen = jQuery('.wa-open');
@@ -43,16 +50,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
                 $whatsappBox.slideUp();
 
-
-
                 if ($sw > 541) {
+                    animateGrtm();
                     $greeting.show();
-
                     //open
                     jQuery($waOpen).on('click', function (e) {
                         e.preventDefault();
                         jQuery($greeting).slideUp();
                         $whatsappBox.slideDown();
+                        jQuery('#grtm').removeClass('active animate__fadeInUp');
                     });
 
                     //close
@@ -60,15 +66,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         $whatsappBox.slideUp();
                         $greeting.slideDown();
                         jQuery('#mobap').slideUp();
+                        animateGrtm();
                     });
-
-
-
-
 
                 } else {
                     $greeting.hide();
-
                     //open
                     jQuery($waOpen).on('click', function (e) {
                         e.preventDefault();

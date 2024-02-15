@@ -10,6 +10,14 @@ defined('ABSPATH') or die('No script kiddies please!');
 
 ?>
 
+
+
+<div id="grtm" class="animate__animated">
+    <span>
+        <?php echo esc_html(mm_get_greeting_message()); ?> kami dari PT. HPM siap membantu Anda. Tekan tombol ini untuk memulai percakapan.
+    </span>
+</div>
+
 <div id="grt" class="wa-open">
     <span>Customer Services</span>
 </div>
