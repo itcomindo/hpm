@@ -581,6 +581,37 @@ a.the-btn.email-bg:before {
 
 /**
 =========================
+* Sitemap Page
+* @todo Sitemap Page
+*=========================
+*/
+
+#the-sitemap-wr {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+ul.sitemap-list {
+  -moz-columns: 2;
+  columns: 2;
+  line-height: 1.7;
+}
+ul.sitemap-list li {
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+a.sitemap-link {
+  position: absolute;
+  z-index: 5;
+  bottom: 8px;
+  right: 8px;
+  background-color: black;
+  color: wheat;
+  font-size: 12px;
+  padding: 4px 1rem;
+}
+/**
+=========================
 * Topbar StyleCSS
 * @todo topbar style
 *=========================
@@ -1027,6 +1058,314 @@ li.srv a.the-btn:before {
   padding: 8px 4px;
   border-radius: 5px;
   border: 1px solid var(--transparent-dark-4);
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
 }
 
 .wf-item textarea::-webkit-input-placeholder,
@@ -1787,15 +2126,12 @@ ul.branch-list li {
 * @todo 992px
 *=========================
 */
-/* @media screen and (max-width: 992px) {
-  .list-num {
-    font-size: 2rem;
-    font-family: var(--font-display);
-    font-weight: 700;
-    line-height: 1.3;
-    margin: 4px auto;
+@media screen and (max-width: 992px) {
+  ul.sitemap-list {
+    columns: 1;
+    -moz-columns: 1;
   }
-} */
+}
 
 /**
 =========================

@@ -23,6 +23,20 @@ if (is_single()) {
     $perusahaan = mm_get_website_data()['nama-perusahaan'];
 }
 
+function mm_get_sitemap_page_link()
+{
+    $pages = get_pages();
+    foreach ($pages as $page) {
+        $template_name = get_page_template_slug($page->ID);
+        if ($template_name == 'sitemap-page.php') {
+            $page_title = esc_attr($page->post_title);
+            $page_url = esc_url(get_page_link($page->ID));
+            return "<a class='sitemap-link' href='{$page_url}'>{$page_title}</a>";
+        }
+    }
+    return 'Sitemap page tidak ditemukan.';
+}
+
 ?>
 
 <section id="sh" class="section default high">
@@ -50,8 +64,14 @@ if (is_single()) {
 
             <div id="the-content">
                 <div class="fim-wr">
+                    <?php echo mm_get_sitemap_page_link(); ?>
+
                     <img class="find-this" src="<?php echo mm_get_featured_image(); ?>" alt="<?php echo esc_html(get_the_title()); ?>" title="<?php echo esc_html(get_the_title()); ?>">
+
+
+
                 </div>
+
                 <?php the_content(); ?>
                 <?php
                 mm_get_post_tags();
