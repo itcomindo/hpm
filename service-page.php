@@ -35,7 +35,10 @@ $perusahaan = mm_get_website_data()['nama-perusahaan'];
 
             <div id="the-content">
                 <div class="fim-wr">
-                    <img class="find-this" src="<?php echo mm_get_featured_image(); ?>" alt="<?php echo esc_html(get_the_title()); ?>" title="<?php echo esc_html(get_the_title()); ?>">
+                    <?php
+                    $image_service = get_field('image_service');
+                    ?>
+                    <img class="find-this" src="<?php echo $image_service; ?>" alt="<?php echo esc_html(get_the_title()); ?>" title="<?php echo esc_html(get_the_title()); ?>">
                 </div>
 
 
