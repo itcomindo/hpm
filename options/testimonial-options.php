@@ -15,7 +15,8 @@ function mm_testimonial_fields()
             ->set_layout('tabbed-horizontal')
             ->add_fields([
                 Field::make('text', 'testi_name', 'Name'),
-                Field::make('textarea', 'testi_content', 'Content'),
+                Field::make('textarea', 'testi_content', 'Content')
+                    ->set_attribute('maxLength', 80),
             ])
             ->set_header_template('
                 <% if (testi_name) { %>

@@ -67,6 +67,11 @@ function mm_get_testimonial()
         foreach ($testis as $testi) {
             $testi_name = $testi['testi_name'];
             $testi_content = $testi['testi_content'];
+            //count characters on $testi_content trim to 60 characters
+            $testi_content = substr($testi_content, 0, 80) . '...';
+
+
+
         ?>
             <div class="testi">
                 <span class="testi-name"><?php echo esc_html($testi_name); ?></span>
