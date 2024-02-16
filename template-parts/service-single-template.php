@@ -43,7 +43,7 @@ function mm_get_sitemap_page_link()
     <div class="container h100">
         <div id="sh-wr" class="h100">
             <h1 id="content-title" class="section-head section-head-medium">
-                <?php echo $title; ?>
+                <?php echo $title; ?><br>
             </h1>
 
             <span class="sh-desc">

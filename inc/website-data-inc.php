@@ -10,6 +10,7 @@ defined('ABSPATH') or die('No script kiddies please!');
 
 function mm_get_website_data()
 {
+    $greeting = mm_get_greeting_message();
     $data = array();
     //nama
     $nm = carbon_get_theme_option('name_p');
@@ -61,10 +62,6 @@ function mm_get_website_data()
 
     //jumlah-staff
     $data['jumlah-staff'] = carbon_get_theme_option('staff_p');
-
-
-
-
 
 
     return $data;
