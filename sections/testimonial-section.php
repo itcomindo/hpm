@@ -12,7 +12,8 @@ defined('ABSPATH') or die('No script kiddies please!');
 ?>
 
 
-<div id="testi" class="section higher">
+<div id="testi" class="section higher has-divider">
+    <?php echo mm_get_shape_divider()['sd-top-tilt-1']; ?>
     <div class="container">
         <div id="testi-top">
             <h3 class="section-head section-head-big" id="testi-section-head">Testimonial</h3>

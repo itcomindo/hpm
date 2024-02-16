@@ -48,7 +48,12 @@ li.rekanan-item img.find-this {
 #testi {
   background-color: var(--color-light-2);
 }
-
+#testi .sd-top-tilt-1 {
+  margin-top: -8px;
+}
+#testi .shape-fill {
+  fill: var(--color-light-1);
+}
 #testi-top {
   display: flex;
   flex-direction: column;

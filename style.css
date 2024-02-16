@@ -110,6 +110,12 @@ body.no-scroll {
   box-sizing: border-box;
   position: relative;
 }
+
+.section.has-divider {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .section.small {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -135,6 +141,10 @@ body.no-scroll {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+}
+.section.has-divider .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 div {
@@ -577,6 +587,54 @@ a.the-btn.email-bg:before {
 }
 .color-accent-2 {
   color: var(--color-accent-2);
+}
+
+/**
+=========================
+* Shape Divider
+* @todo Shape Divider
+*=========================
+*/
+
+.sd-top-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.sd-top-1 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.sd-top-1 .shape-fill {
+  fill: #ffffff;
+}
+
+/*=========================sd top title=========================*/
+.sd-top-tilt-1 {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.sd-top-tilt-1 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.sd-top-tilt-1 .shape-fill {
+  fill: #f4f4f4;
 }
 
 /**
@@ -1676,6 +1734,286 @@ li.srv a.the-btn:before {
   font-size: 90%;
 }
 
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-webkit-input-placeholder,
+.wf-item input::-webkit-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-moz-placeholder,
+.wf-item input::-moz-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea:-ms-input-placeholder,
+.wf-item input:-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
+.wf-item textarea::-ms-input-placeholder,
+.wf-item input::-ms-input-placeholder {
+  color: var(--transparent-dark-5);
+  opacity: 0.8; /* Firefox */
+  font-size: 90%;
+}
+
 .wf-item textarea::placeholder,
 .wf-item input::placeholder {
   color: var(--transparent-dark-5);
@@ -1772,6 +2110,18 @@ a.ab-btn {
 #foo {
   background-color: var(--color-dark-3);
   color: var(--color-light-1);
+}
+#foo .container:before {
+  content: "";
+  width: calc(100% / 4);
+  height: 2rem;
+  position: absolute;
+  top: -7rem;
+  left: 50%;
+  background-color: var(--color-accent-1);
+  transform: translateX(-50%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 10% 100%);
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 10% 100%);
 }
 
 #foo-wr {
@@ -2272,6 +2622,27 @@ ul.branch-list li {
   }
   #mobap {
     display: block;
+  }
+  #mobap:before {
+    content: "PT. HPMI";
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+    height: 2rem;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    background: linear-gradient(
+      to bottom,
+      var(--color-dark-1),
+      var(--color-dark-3)
+    );
+    transform: translateX(-50%);
+    -webkit-clip-path: polygon(10% 0, 90% 1%, 100% 100%, 0 100%);
+    clip-path: polygon(10% 0, 90% 1%, 100% 100%, 0 100%);
   }
   #hero-data {
     width: 150px;

@@ -9,6 +9,11 @@ defined('ABSPATH') or die('No script kiddies please!');
 ?>
 
 <section id="about" class="section higher">
+    <div class="sd-top-1">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+        </svg>
+    </div>
     <div class="container">
         <div id="about-wr">
             <!-- about left -->

@@ -11,7 +11,9 @@ defined('ABSPATH') or die('No script kiddies please!');
 
 
 
-<section id="services" class="section higher">
+
+<section id="services" class="section higher has-divider">
+    <?php echo mm_get_shape_divider()['sd-top-tilt-1']; ?>
     <div class="container">
         <div class="services-wr">
             <!-- service top -->
