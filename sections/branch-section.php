@@ -41,6 +41,12 @@ defined('ABSPATH') or die('No script kiddies please!');
                         <h3 class="section-head section-head-small br-card-head">Bekasi II</h3>
                         <span class="br-alamat">JL. Ujung Harapan No10 Rt.002/014, Kel.Bahagia Kec.Babelan Kab. Bekasi 17612</span>
                     </li>
+
+                    <li>
+                        <h3 class="section-head section-head-small br-card-head">Perwakilan Cabang</h3>
+                        <span class="br-alamat"><b>Kantor Perwakilan Cabang:</b> Medan, Pekanbaru, Lampung, Bandung, Semarang, Surabaya, Bali, Makassar, Balikpapan.</span>
+                    </li>
+
                 </ul>
             </div>
         </div>
