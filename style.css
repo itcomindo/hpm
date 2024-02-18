@@ -277,33 +277,6 @@ a {
   box-sizing: border-box;
 }
 
-/* .section-head,
-.card-head {
-  font-family: var(--font-display);
-  line-height: 1.2;
-  margin: 6px 0;
-}
-
-.section-head-bigger {
-  font-size: var(--font-clamp-4);
-}
-
-.section-head-big {
-  font-size: var(--font-clamp-3);
-}
-
-.section-head-medium {
-  font-size: var(--font-clamp-2);
-}
-
-.section-head-small {
-  font-size: var(--font-clamp-1);
-}
-
-.section-head-smallest {
-  font-size: 1.1rem;
-} */
-
 .card-head-big {
   font-size: var(--font-clamp-1);
 }

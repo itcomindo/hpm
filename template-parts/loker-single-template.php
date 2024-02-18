@@ -19,11 +19,6 @@ defined('ABSPATH') or die('No script kiddies please!');
                 ?>
 
             </div>
-
-
-
-            <!-- Csing Right -->
-            <div id="csing-r"></div>
         </div>
     </div>
 </section>
