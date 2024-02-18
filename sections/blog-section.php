@@ -17,7 +17,7 @@ if (is_single()) {
 <section id="sh" class="section high">
     <div class="container">
         <div id="sh-wr">
-            <h1 id="content-title" class="section-head section-head-medium">
+            <h1 id="content-title" class="head medium">
                 <?php echo $title; ?>
             </h1>
 

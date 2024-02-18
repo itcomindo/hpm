@@ -18,7 +18,7 @@ defined('ABSPATH') or die('No script kiddies please!');
         <div class="services-wr">
             <!-- service top -->
             <div id="service-top">
-                <h2 class="section-head section-head-big">Services</h2>
+                <h2 class="head medium">Services</h2>
                 <span class="lw75-mw100">Menyediakan tenaga kerja siap kerja yang siap ditempatkan dan ditugaskan diseluruh wilayah di Indonesia. Bidang-bidang kerja yang kami layani antaralain adalah:</span>
             </div>
             <!-- service bottom -->
@@ -53,7 +53,7 @@ defined('ABSPATH') or die('No script kiddies please!');
                 ?>
                             <li>
                                 <div class="other-head-wr">
-                                    <h3 class="section-head section-head-small other-head"><?php echo esc_html($title); ?></h3>
+                                    <h3 class="head smaller other-head"><?php echo esc_html($title); ?></h3>
                                 </div>
                                 <div class="other-content-wr">
                                     <span class="other-content"><?php echo $description; ?></span>
@@ -71,7 +71,7 @@ defined('ABSPATH') or die('No script kiddies please!');
                                         <img class="find-this" src="<?php echo $serv_image; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
                                     </a>
                                 </div>
-                                <h3 class="section-head section-head-small">
+                                <h3 class="head smaller">
                                     <a href="<?php echo esc_html($link); ?>" title="<?php echo esc_html($title); ?>">
                                         <?php echo esc_html($title); ?>
                                     </a>

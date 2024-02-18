@@ -15,12 +15,12 @@ get_header();
     <div class="container">
         <div id="the-sitemap-wr">
             <div class="sitemap-head-wr">
-                <h1 class="section-head section-head-medium">Sitemap</h1>
+                <h1 class="head medium">Sitemap</h1>
             </div>
 
             <!-- sitemap for post start -->
             <div class="tsm">
-                <h2 class="section-head section-head-medium">Post Sitemap</h2>
+                <h2 class="head medium">Post Sitemap</h2>
                 <ul class="list-no-style sitemap-list">
                     <?php
                     $post_sitemap = mm_get_post_sitemap_query();
@@ -39,7 +39,7 @@ get_header();
 
             <!-- sitemap for page start -->
             <div class="tsm">
-                <h3 class="section-head section-head-medium">Post Sitemap</h3>
+                <h3 class="head medium">Post Sitemap</h3>
                 <ul class="list-no-style sitemap-list">
                     <?php
                     $page_sitemap = mm_get_page_sitemap_query();
@@ -58,7 +58,7 @@ get_header();
 
             <!-- sitemap for tag start -->
             <div class="tsm">
-                <h3 class="section-head section-head-medium">Tag Sitemap</h3>
+                <h3 class="head medium">Tag Sitemap</h3>
                 <ul class="list-no-style sitemap-list">
                     <?php
                     $tag_sitemap = mm_get_tag_sitemap_query();

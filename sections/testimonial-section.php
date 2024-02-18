@@ -16,7 +16,7 @@ defined('ABSPATH') or die('No script kiddies please!');
     <?php echo mm_get_shape_divider()['sd-top-tilt-1']; ?>
     <div class="container">
         <div id="testi-top">
-            <h3 class="section-head section-head-big" id="testi-section-head">Testimonial</h3>
+            <h3 class="head medium" id="testi-section-head">Testimonial</h3>
             <span class="lw75-mw100">
                 Apa kata mereka tentang <?php echo esc_html(mm_get_website_data()['nama-perusahaan']); ?>
             </span>

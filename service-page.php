@@ -15,7 +15,7 @@ $perusahaan = mm_get_website_data()['nama-perusahaan'];
 <section id="sh" class="section default high">
     <div class="container h100">
         <div id="sh-wr" class="h100">
-            <h1 id="content-title" class="section-head section-head-medium">
+            <h1 id="content-title" class="head medium">
                 <?php echo get_the_title(); ?>
             </h1>
 
@@ -42,7 +42,7 @@ $perusahaan = mm_get_website_data()['nama-perusahaan'];
                 </div>
 
 
-                <h2 class="section-head section-head-small">
+                <h2 class="head small">
                     <?php echo esc_html(get_the_title()); ?>
                 </h2>
 
@@ -53,7 +53,7 @@ $perusahaan = mm_get_website_data()['nama-perusahaan'];
 
 
                 <div class="other-service">
-                    <h3 class="section-head section-head-small">Penawaran Jasa Outsourcing Kami Lainnya:</h3>
+                    <h3 class="head small">Penawaran Jasa Outsourcing Kami Lainnya:</h3>
                     <ul class="list-no-style srv-list">
                         <?php
                         $args = mm_get_service_page_query();
@@ -72,7 +72,7 @@ $perusahaan = mm_get_website_data()['nama-perusahaan'];
                                 $link = get_the_permalink();
                         ?>
                                 <li>
-                                    <h3 class="other-head section-head"><?php echo esc_html($title); ?></h3>
+                                    <h3 class="head smaller"><?php echo esc_html($title); ?></h3>
                                     <span><?php echo esc_html($description); ?></span>
 
                                     <a class="the-btn" href="<?php echo get_the_permalink(); ?>" title="<?php echo esc_html($title); ?>">Lihat Penawaran</a>

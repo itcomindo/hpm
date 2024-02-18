@@ -14,7 +14,7 @@ get_header();
     <div class="container">
         <div id="contact-wr">
             <div id="contact-left">
-                <h1 class="section-head section-head-small"><?php the_title(); ?></h1>
+                <h1 class="head medium"><?php the_title(); ?></h1>
 
                 <div id="ca-wr">
                     <ul class="list-no-style ca-list">

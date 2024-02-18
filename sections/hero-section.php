@@ -15,7 +15,7 @@ defined('ABSPATH') or die('No script kiddies please!');
         <div id="hero-wr" class="h100">
             <!-- hero left -->
             <h1 id="hero-head" class="text-medium">Perusahaan Outsourcing Terlengkap</h1>
-            <span id="hero-desc" class="section-head section-head-medium">Solusi penyedia ketenagakerjaan profesional, legal dan resmi di Indonesia.</span>
+            <span id="hero-desc" class="head medium">Solusi penyedia ketenagakerjaan profesional, legal dan resmi di Indonesia.</span>
             <span>Inovatif dan dedikatif memberikan pelayanan tenaga kerja outosourcing terbaik Siap bertugas keseluruh Indonesia.</span>
             <a class="the-btn hover-to-top bigger hero-btn" href="#services">Our Services</a>
 

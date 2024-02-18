@@ -11,7 +11,7 @@ get_header();
 <section id="the-gal" class="section high">
     <div class="container">
         <div id="gal-head-wr">
-            <h1 id="gal-head" class="section-head section-head-medium">Galeri</h1>
+            <h1 id="gal-head" class="head medium">Galeri</h1>
             <span>Photo dokumentasi kegiatan dan aktivitas dari <?php echo esc_html(mm_get_website_data()['nama-perusahaan']); ?>.</span>
         </div>
         <div id="the-gal-wr">

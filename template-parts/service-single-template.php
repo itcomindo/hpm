@@ -42,8 +42,8 @@ function mm_get_sitemap_page_link()
 <section id="sh" class="section default high">
     <div class="container h100">
         <div id="sh-wr" class="h100">
-            <h1 id="content-title" class="section-head section-head-medium">
-                <?php echo $title; ?><br>
+            <h1 id="content-title" class="head medium">
+                <?php echo $title; ?>
             </h1>
 
             <span class="sh-desc">

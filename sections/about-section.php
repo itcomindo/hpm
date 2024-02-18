@@ -19,7 +19,7 @@ defined('ABSPATH') or die('No script kiddies please!');
             <!-- about left -->
             <div id="ab-left">
                 <span class="text-medium"><?php echo esc_html(mm_get_website_data()['nama-perusahaan']); ?></span>
-                <h2 class="section-head section-head-medium">Solusi Pengadaan Tenaga Kerja</h2>
+                <h2 class="head small">Solusi Pengadaan Tenaga Kerja</h2>
                 <span>Dengan secara konsisten kami terus berinovasi dan meningkatkan mutu layanan perusahaan termasuk mengupgrade skill dan knowledge para staff yang bertugas di perusahaan Anda.</span>
                 <a href="//wa.me/<?php echo esc_html(mm_get_website_data()['phone-url']); ?>" class="the-btn hover-to-top ab-btn big borad-5 shadow-s wa-bg"><i class="fab fa-whatsapp"></i> Layanan Konsultasi</a>
             </div>
@@ -28,7 +28,7 @@ defined('ABSPATH') or die('No script kiddies please!');
             <!-- about right -->
             <div id="ab-right">
                 <div id="ab-right-top">
-                    <h3 class="section-head section-head-small">Why Us</h3>
+                    <h3 class="head small">Why Us</h3>
                     <span>Hingga hari ini <?php echo esc_html(mm_get_website_data()['nama-perusahaan']); ?> telah:</span>
                 </div>
                 <div id="ab-content">
@@ -36,28 +36,28 @@ defined('ABSPATH') or die('No script kiddies please!');
                         <li class="borad-10 hover-to-top">
                             <div class="ab-top">
                                 <span class="list-text">Berpengalaman</span>
-                                <span class="list-num section-head section-head-medium"><?php echo esc_html(mm_get_website_data()['experience']); ?></span>
+                                <span class="list-num head small"><?php echo esc_html(mm_get_website_data()['experience']); ?></span>
                                 <span class="list-text">Tahun</span>
                             </div>
                         </li>
                         <li class="borad-10 hover-to-top">
                             <div class="ab-top">
                                 <span class="list-text">Melayani</span>
-                                <span class="list-num section-head section-head-medium">34</span>
+                                <span class="list-num head small">34</span>
                                 <span class="list-text">Provinsi</span>
                             </div>
                         </li>
                         <li class="borad-10 hover-to-top">
                             <div class="ab-top">
                                 <span class="list-text">Mengelola</span>
-                                <span class="list-num section-head section-head-medium"><?php echo esc_html(mm_get_website_data()['jumlah-staff']); ?></span>
+                                <span class="list-num head small"><?php echo esc_html(mm_get_website_data()['jumlah-staff']); ?></span>
                                 <span class="list-text">Lebih Staff Aktif</span>
                             </div>
                         </li>
                         <li class="borad-10 hover-to-top">
                             <div class="ab-top">
                                 <span class="list-text">Dipercaya</span>
-                                <span class="list-num section-head section-head-medium"><?php echo esc_html(mm_get_website_data()['jumlah-customer']); ?></span>
+                                <span class="list-num head small"><?php echo esc_html(mm_get_website_data()['jumlah-customer']); ?></span>
                                 <span class="list-text">Lebih Perusahaan</span>
                             </div>
                         </li>

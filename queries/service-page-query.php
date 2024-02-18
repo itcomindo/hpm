@@ -43,7 +43,7 @@ function mm_service_page_dummy()
         ?>
             <li class="srv hover-to-top">
                 <i class="fab fa-whatsapp"></i>
-                <h3 class="section-head section-head-small">Outsourcing Security</h3>
+                <h3 class="head small">Outsourcing Security</h3>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus.</span>
                 <a href="#" class="the-btn big">Lihat Penawaran</a>
             </li>

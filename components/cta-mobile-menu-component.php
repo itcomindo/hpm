@@ -10,7 +10,7 @@ defined('ABSPATH') or die('No script kiddies please!');
 ?>
 
 <div id="mmcta">
-    <h2 class="section-head section-head-small"><?php echo mm_get_website_data()['nama-perusahaan']; ?></h2>
+    <h2 class="head small"><?php echo mm_get_website_data()['nama-perusahaan']; ?></h2>
     <span class="text-small"><?php echo mm_get_website_data()['alamat'] ?></span>
     <span><?php echo mm_get_website_data()['phone'] ?></span>
     <ul class="list-no-style mmcta-list">
