@@ -37,7 +37,7 @@ defined('ABSPATH') or die('No script kiddies please!');
                             </a>
                         </div>
                         <div class="thbot">
-                            <h3 class="head smaller th-title">
+                            <h3 class="head smallest th-title">
                                 <a href="<?php echo esc_html($permalink); ?>" title="<?php echo esc_html($title); ?>" rel="bookmark"><?php echo esc_html($title); ?></a>
                             </h3>
                         </div>

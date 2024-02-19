@@ -185,6 +185,19 @@ ul.tags-list li:last-child:after {
 
 /**
 =========================
+* 1280px
+* @todo 1280px
+*=========================
+*/
+
+@media screen and (max-width: 1280px) and (max-height: 720px) {
+  #the-content {
+    margin-top: 0rem;
+  }
+}
+
+/**
+=========================
 * 991px
 * @todo 991px
 *=========================
@@ -202,11 +215,24 @@ ul.tags-list li:last-child:after {
 *=========================
 */
 @media screen and (max-width: 600px) {
-  #the-content {
+  /* #the-content {
     margin-top: -8rem;
-  }
+  } */
   .gal {
     flex-basis: calc(100% / 2 - 16px);
+  }
+}
+
+/**
+=========================
+* 414px
+* @todo 414px
+*=========================
+*/
+
+@media screen and (max-width: 1280px) and (max-height: 736px) {
+  #the-content {
+    margin-top: 0rem;
   }
 }
 
