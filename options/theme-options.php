@@ -21,6 +21,18 @@ function crb_attach_theme_options()
             // textarea alamat
             Field::make('textarea', 'address_p', 'Alamat'),
 
+            //text kota
+            Field::make('text', 'city_p', 'Kota')
+                ->set_default_value('Bekasi'),
+
+            //text provinsi
+            Field::make('text', 'province_p', 'Provinsi')
+                ->set_default_value('Jawa Barat'),
+
+            //text kodepos
+            Field::make('text', 'postal_code_p', 'Kode Pos')
+                ->set_default_value('17215'),
+
             //text no kantor
             Field::make('text', 'phone_p', 'No Telepon'),
 

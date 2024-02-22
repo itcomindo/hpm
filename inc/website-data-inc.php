@@ -23,6 +23,16 @@ function mm_get_website_data()
     //alamat
     $data['alamat'] = carbon_get_theme_option('address_p');
 
+
+    //kota
+    $data['kota'] = carbon_get_theme_option('city_p');
+
+    //provinsi
+    $data['provinsi'] = carbon_get_theme_option('province_p');
+
+    //kodepos
+    $data['kodepos'] = carbon_get_theme_option('postal_code_p');
+
     //no kantor
     $data['no-kantor'] = carbon_get_theme_option('phone_p');
 
@@ -34,13 +44,13 @@ function mm_get_website_data()
     $hp = carbon_get_theme_option('mobile_p');
 
     $phone_url = substr_replace($hp, '62', 0, 1);
-    //remove space with nothing
     $phone_url = str_replace(' ', '', $phone_url);
-    //replace - with nothing
     $phone_url = str_replace('-', '', $phone_url);
 
     $data['phone'] = $hp;
     $data['phone-url'] = $phone_url;
+    $pinternasional = str_replace('62', '', $data['phone-url']);
+    $data['phone-internasional'] = $pinternasional;
 
 
 
